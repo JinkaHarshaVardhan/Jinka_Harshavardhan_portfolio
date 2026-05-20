@@ -180,6 +180,44 @@ main {
   position: relative;
 }
 
+.hero--intro {
+  min-height: auto;
+  padding: clamp(3rem, 8vw, 5rem) 0 clamp(2rem, 5vw, 3rem);
+  align-items: flex-start;
+}
+
+.hero-intro {
+  max-width: 720px;
+}
+
+.hero__name {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 7vw, 4.25rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, var(--ink) 0%, var(--ocean) 55%, var(--sky) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero__role {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--ocean);
+  margin-bottom: 1.5rem;
+}
+
+.hero__summary {
+  font-size: clamp(1.05rem, 2vw, 1.2rem);
+  line-height: 1.75;
+  color: var(--ink-soft);
+  max-width: 62ch;
+  margin-bottom: 2rem;
+}
+
 .hero__content {
   display: grid;
   grid-template-columns: 1.2fr 0.8fr;

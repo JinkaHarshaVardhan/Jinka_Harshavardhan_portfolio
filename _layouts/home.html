@@ -3,39 +3,19 @@ layout: default
 ---
 {% assign p = site.data.profile %}
 
-<section class="hero">
-  <div class="container hero__content">
-    <div class="reveal">
+<section class="hero hero--intro">
+  <div class="container">
+    <div class="hero-intro reveal">
       <p class="hero__eyebrow">{{ p.eyebrow }}</p>
-      <h1 class="hero__title">{{ p.hero_title_before }} <span class="highlight">{{ p.hero_title_highlight }}</span> {{ p.hero_title_after }}</h1>
-      <p class="hero__tagline" data-typing='{{ p.hero_taglines | jsonify }}'></p>
+      <h1 class="hero__name">{{ p.name }}</h1>
+      <p class="hero__role">{{ p.role }} · {{ p.company }}</p>
+      <p class="hero__summary">{{ p.summary }}</p>
       <div class="hero__actions">
         <a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">View Projects</a>
         <a href="{{ '/research/' | relative_url }}" class="btn btn--ghost">Research</a>
         <a href="{{ site.resume_pdf | relative_url }}" class="btn btn--ghost" download>Download CV</a>
       </div>
       <div class="hero__social">{% include social-icons.html %}</div>
-    </div>
-    <div class="hero__visual reveal">
-      <div class="hero__orb" aria-hidden="true"></div>
-      <div class="hero__orb-inner glass-card">
-        <span class="role">{{ p.orb_role }}</span>
-        <span class="location">{{ p.orb_location }}</span>
-        <p style="margin-top:1rem;font-size:0.85rem;color:var(--ink-muted)">{{ p.orb_note }}</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section section--tight">
-  <div class="container">
-    <div class="bento-grid reveal-stagger">
-      {% for stat in p.stats %}
-      <div class="glass-card span-4 stat-block">
-        <div class="stat-block__value">{{ stat.value }}</div>
-        <div class="stat-block__label">{{ stat.label }}</div>
-      </div>
-      {% endfor %}
     </div>
   </div>
 </section>

@@ -15,20 +15,3 @@ Hybrid Physics-Guided Spatial Earthquake Forecasting — see the dedicated [Rese
 
 [Full Research Write-up](/research/){: .btn .btn--primary}
 [GitHub](https://github.com/JinkaHarshaVardhan){: .btn .btn--ghost}
-
----
-
-## House Price Prediction {#house-price}
-
-### Problem
-
-Predict residential prices from structured housing attributes in tabular datasets.
-
-### Tech Stack
-
-- Scikit-learn, Pandas
-- Feature engineering, regression
-
-### Results
-
-End-to-end ML pipeline from EDA to tuned regressors with cross-validated error metrics.

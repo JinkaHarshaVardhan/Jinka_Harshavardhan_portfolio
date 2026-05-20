@@ -32,14 +32,14 @@ stats:
 featured_skill_groups:
   - PyTorch
   - Computer Vision
+  - LangGraph
+  - LangChain
   - LLM Workflows
   - Generative AI
-  - LangChain
+  - FastAPI
   - Prompt Engineering
-  - RAG
-  - React
-  - Streamlit
   - Agentic AI
+  - ReAct
 
 journey_steps:
   - Machine Learning

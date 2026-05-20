@@ -50,7 +50,7 @@ project_categories:
     hub: /projects/research-projects/
   - id: ml
     label: Machine Learning
-    hub: /projects/research-projects/
+    hub: /projects/llm/
 
 markdown: kramdown
 permalink: pretty

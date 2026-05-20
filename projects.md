@@ -6,4 +6,4 @@ description: AI and ML projects portfolio.
 permalink: /projects/
 ---
 
-Edit project cards in `_data/projects.yml`. Edit detailed write-ups in `projects/*.md`.
+Featured: HPSF-Net, sentiment analysis, drowsiness detection, and **AI Sprint Copilot** multi-agent platform.

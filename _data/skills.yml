@@ -21,14 +21,19 @@
   items:
     - Prompt Engineering
     - LangChain
+    - LangGraph
     - Multimodal AI
     - Agentic AI
     - LLM Workflows
+    - ReAct
+    - Ollama
 
 - group: Tools
   items:
     - Git / GitHub
+    - FastAPI
     - Streamlit
     - VS Code
     - Linux
+    - Pytest
     - NumPy / Pandas

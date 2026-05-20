@@ -27,13 +27,15 @@
   detail_url: /projects/llm/#sentiment
   github: https://github.com/JinkaHarshaVardhan
 
-- id: house-price
-  title: House Price Prediction
-  category: ml
-  tag: ML
+- id: sprint-copilot
+  title: AI Sprint Copilot
+  category: agentic
+  tag: "Agentic · Multi-Agent"
   featured: false
-  summary: Regression model on structured housing attributes.
-  detail_url: /projects/research-projects/#house-price
+  summary: >
+    Multi-agent agile intelligence platform integrating GitHub, Plane, and local LLMs for sprint analytics,
+    standups, and risk detection with LangGraph orchestration.
+  detail_url: /projects/agentic-ai/#sprint-copilot
   github: https://github.com/JinkaHarshaVardhan
 
 - id: agentic
@@ -41,6 +43,6 @@
   category: agentic
   tag: Agentic
   featured: false
-  summary: LangChain-based agents, RAG patterns, and multimodal orchestration.
+  summary: LangChain-based agents, RAG patterns, and multimodal orchestration at Immerso.ai.
   detail_url: /projects/agentic-ai/
   github: https://github.com/JinkaHarshaVardhan

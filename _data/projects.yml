@@ -37,12 +37,3 @@
     standups, and risk detection with LangGraph orchestration.
   detail_url: /projects/agentic-ai/#sprint-copilot
   github: https://github.com/JinkaHarshaVardhan
-
-- id: agentic
-  title: LLM Workflow Pipelines
-  category: agentic
-  tag: Agentic
-  featured: false
-  summary: LangChain-based agents, RAG patterns, and multimodal orchestration at Immerso.ai.
-  detail_url: /projects/agentic-ai/
-  github: https://github.com/JinkaHarshaVardhan

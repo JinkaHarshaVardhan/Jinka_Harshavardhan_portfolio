@@ -52,8 +52,3 @@ GitHub + Plane APIs → Unified Context Layer → LangGraph Orchestration
 
 End-to-end multi-agent platform demonstrating production-style agent orchestration, tool integration, and sprint intelligence beyond single-shot LLM prompts.
 
----
-
-## LLM Workflows (Professional)
-
-At Immerso.ai I design prompt templates, evaluation harnesses, and agentic pipelines — combining retrieval, reasoning, and tool use for R&D prototypes.

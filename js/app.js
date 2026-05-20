@@ -130,20 +130,7 @@
     }
   }
 
-  /* Magnetic buttons */
-  if (!prefersReduced) {
-    document.querySelectorAll(".btn--primary, .social-link").forEach((btn) => {
-      btn.addEventListener("mousemove", (e) => {
-        const rect = btn.getBoundingClientRect();
-        const x = e.clientX - rect.left - rect.width / 2;
-        const y = e.clientY - rect.top - rect.height / 2;
-        btn.style.transform = `translate(${x * 0.15}px, ${y * 0.15}px)`;
-      });
-      btn.addEventListener("mouseleave", () => {
-        btn.style.transform = "";
-      });
-    });
-  }
+  /* Magnetic effect disabled — CSS hover lift handles button float */
 
   /* Smooth anchor scroll */
   document.querySelectorAll('a[href^="#"]').forEach((a) => {

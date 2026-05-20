@@ -12,8 +12,10 @@
   --ink-muted: #5a7285;
   --glass: rgba(255, 255, 255, 0.88);
   --glass-border: rgba(191, 221, 240, 0.65);
-  --shadow-soft: 0 8px 32px rgba(191, 221, 240, 0.35);
-  --shadow-lift: 0 20px 60px rgba(140, 192, 235, 0.2);
+  --shadow-soft: 0 4px 6px rgba(26, 43, 60, 0.04), 0 12px 28px rgba(191, 221, 240, 0.35);
+  --shadow-lift: 0 8px 16px rgba(26, 43, 60, 0.06), 0 24px 48px rgba(140, 192, 235, 0.28);
+  --shadow-btn: 0 4px 14px rgba(140, 192, 235, 0.45);
+  --shadow-btn-hover: 0 8px 24px rgba(140, 192, 235, 0.5);
   --radius-sm: 12px;
   --radius-md: 20px;
   --radius-lg: 32px;

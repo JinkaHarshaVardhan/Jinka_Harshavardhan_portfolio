@@ -1,5 +1,5 @@
 {% for job in site.data.experience %}
-<article class="glass-card {% if job.current %}glass-card--accent{% endif %} experience-card reveal">
+<article class="glass-card section-glass {% if job.current %}glass-card--accent{% endif %} experience-card reveal">
   <span class="tag{% unless job.current %} tag--peach{% endunless %}">{{ job.tag }}</span>
   {% for pos in job.positions %}
   <h3>{{ pos.title }}</h3>

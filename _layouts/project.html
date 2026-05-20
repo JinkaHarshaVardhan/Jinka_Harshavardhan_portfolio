@@ -1,19 +1,20 @@
 ---
 layout: default
 ---
-<header class="page-header container">
-  <p class="hero__eyebrow reveal">
-    <a href="{{ '/projects/' | relative_url }}" style="text-decoration:none">← Projects</a>
-    {% if page.parent_hub %} · <a href="{{ page.parent_hub | relative_url }}" style="text-decoration:none">{{ page.parent_label }}</a>{% endif %}
-  </p>
-  <h1 class="section-title reveal">{{ page.title }}</h1>
-  {% if page.subtitle %}
-  <p class="section-subtitle reveal" style="margin:0 auto">{{ page.subtitle }}</p>
-  {% endif %}
-</header>
-<section class="section section--tight">
-  <div class="container">
-    <article class="glass-card glass-card--accent reveal markdown-body" style="padding:2.5rem">
+<div class="container sections-stack">
+  <header class="glass-card section-glass reveal page-header">
+    <p class="hero__eyebrow" style="margin-bottom:0.75rem">
+      <a href="{{ '/projects/' | relative_url }}" style="text-decoration:none">← Projects</a>
+      {% if page.parent_hub %} · <a href="{{ page.parent_hub | relative_url }}" style="text-decoration:none">{{ page.parent_label }}</a>{% endif %}
+    </p>
+    <h1 class="section-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="section-subtitle" style="margin-top:0.75rem">{{ page.subtitle }}</p>
+    {% endif %}
+  </header>
+
+  <section class="section section--tight" style="padding-top:0;padding-bottom:var(--section-gap)">
+    <article class="glass-card glass-card--accent section-glass reveal markdown-body">
       {% if page.tag %}<span class="tag{% if page.tag_peach %} tag--peach{% endif %}">{{ page.tag }}</span>{% endif %}
       {{ content }}
       {% if page.github %}
@@ -22,5 +23,5 @@ layout: default
       </p>
       {% endif %}
     </article>
-  </div>
-</section>
+  </section>
+</div>

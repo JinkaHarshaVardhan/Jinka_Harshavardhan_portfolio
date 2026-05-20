@@ -1,33 +1,41 @@
 ---
 layout: default
 ---
-<header class="page-header container">
-  <h1 class="section-title reveal">{{ page.title }}</h1>
-  {% if page.subtitle %}
-  <p class="section-subtitle reveal" style="margin:0 auto">{{ page.subtitle }}</p>
-  {% endif %}
-</header>
-
-<section class="section section--tight">
-  <div class="container">
-    <nav class="category-nav reveal" aria-label="Filter projects">
-      {% for cat in site.project_categories %}
-      <button type="button" class="{% if cat.id == 'all' %}is-active{% endif %}" data-filter="{{ cat.id }}">{{ cat.label }}</button>
-      {% endfor %}
-    </nav>
-
-    <nav class="category-nav reveal" style="margin-top:-1rem;margin-bottom:2.5rem">
-      {% for cat in site.project_categories %}
-      {% if cat.hub %}
-      <a href="{{ cat.hub | relative_url }}">{{ cat.label }} Hub →</a>
-      {% endif %}
-      {% endfor %}
-    </nav>
-
-    {% if content != "" %}
-    <div class="markdown-body reveal" style="margin-bottom:2rem">{{ content }}</div>
+<div class="container sections-stack">
+  <header class="glass-card section-glass reveal page-header" style="text-align:center">
+    <h1 class="section-title">{{ page.title }}</h1>
+    {% if page.subtitle %}
+    <p class="section-subtitle" style="margin:0.75rem auto 0">{{ page.subtitle }}</p>
     {% endif %}
+  </header>
 
-    {% include project-grid.html %}
-  </div>
-</section>
+  <section class="section section--tight" style="padding-top:0">
+    <div class="glass-card section-glass reveal">
+      <nav class="category-nav" aria-label="Filter projects">
+        {% for cat in site.project_categories %}
+        <button type="button" class="{% if cat.id == 'all' %}is-active{% endif %}" data-filter="{{ cat.id }}">{{ cat.label }}</button>
+        {% endfor %}
+      </nav>
+      <nav class="category-nav" style="margin-top:1rem;margin-bottom:0">
+        {% for cat in site.project_categories %}
+        {% if cat.hub %}
+        <a href="{{ cat.hub | relative_url }}">{{ cat.label }} Hub →</a>
+        {% endif %}
+        {% endfor %}
+      </nav>
+    </div>
+  </section>
+
+  {% if content != "" %}
+  <section class="section section--tight" style="padding-top:0">
+    <div class="glass-card section-glass markdown-body reveal">{{ content }}</div>
+  </section>
+  {% endif %}
+
+  <section class="section section--tight" style="padding-top:0;padding-bottom:var(--section-gap)">
+    <div class="glass-card section-glass reveal">
+      <h2 class="section-title">All Projects</h2>
+      {% include project-grid.html %}
+    </div>
+  </section>
+</div>

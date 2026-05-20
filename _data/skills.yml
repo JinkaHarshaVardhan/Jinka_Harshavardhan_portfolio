@@ -1,0 +1,34 @@
+- group: Languages & Web
+  items:
+    - Python
+    - SQL
+    - JavaScript
+    - React.js
+    - HTML / CSS
+    - Tailwind CSS
+
+- group: AI / ML
+  items:
+    - PyTorch
+    - TensorFlow
+    - Computer Vision
+    - NLP
+    - Generative AI
+    - RAG
+    - Scikit-learn
+
+- group: LLM & Agents
+  items:
+    - Prompt Engineering
+    - LangChain
+    - Multimodal AI
+    - Agentic AI
+    - LLM Workflows
+
+- group: Tools
+  items:
+    - Git / GitHub
+    - Streamlit
+    - VS Code
+    - Linux
+    - NumPy / Pandas

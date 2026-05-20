@@ -1,0 +1,33 @@
+<header class="site-nav" role="banner">
+  <div class="nav-inner">
+    <a href="{{ '/' | relative_url }}" class="nav-logo">
+      <span class="nav-logo__dot" aria-hidden="true"></span>
+      {{ site.data.profile.name }}
+    </a>
+    <nav aria-label="Main">
+      <ul class="nav-links">
+        {% for item in site.navigation %}
+        {% assign active = false %}
+        {% if item.url == '/' %}
+          {% if page.url == '/' or page.url == '/index.html' %}{% assign active = true %}{% endif %}
+        {% elsif page.url contains item.url %}
+          {% assign active = true %}
+        {% endif %}
+        <li>
+          <a href="{{ item.url | relative_url }}" class="{% if active %}is-active{% endif %}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+<nav class="mobile-menu" aria-label="Mobile">
+  <ul>
+    {% for item in site.navigation %}
+    <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+    {% endfor %}
+  </ul>
+</nav>

@@ -1,0 +1,32 @@
+{% for job in site.data.experience %}
+<article class="glass-card {% if job.current %}glass-card--accent{% endif %} experience-card reveal">
+  <span class="tag{% unless job.current %} tag--peach{% endunless %}">{{ job.tag }}</span>
+  {% for pos in job.positions %}
+  <h3>{{ pos.title }}</h3>
+  <p class="meta">{{ job.company }}{% if job.location != "" %}, {{ job.location }}{% endif %} · {{ pos.dates }}</p>
+  {% if pos.summary %}
+  <p style="color:var(--ink-soft);margin-bottom:1rem">{{ pos.summary }}</p>
+  {% endif %}
+  {% if pos.responsibilities %}
+  <h4 style="margin:1rem 0 0.5rem;font-size:1rem">Responsibilities</h4>
+  <ul>
+    {% for item in pos.responsibilities %}
+    <li>{{ item }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  {% if pos.technologies %}
+  <h4 style="margin:1.25rem 0 0.5rem;font-size:1rem">Technologies</h4>
+  <div class="skills-cloud" style="margin-top:0.5rem">
+    {% for tech in pos.technologies %}
+    <span class="skill-pill">{{ tech }}</span>
+    {% endfor %}
+  </div>
+  {% endif %}
+  {% if pos.outcomes %}
+  <h4 style="margin:1.25rem 0 0.5rem;font-size:1rem">Outcomes</h4>
+  <p style="color:var(--ink-soft)">{{ pos.outcomes }}</p>
+  {% endif %}
+  {% endfor %}
+</article>
+{% endfor %}

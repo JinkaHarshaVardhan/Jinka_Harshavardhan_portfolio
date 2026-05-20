@@ -1,0 +1,64 @@
+title: Jinka Harshavardhan
+description: Gen AI Engineer — computer vision, LLM workflows, and generative AI.
+url: "https://jinkaharshavardhan.github.io"
+baseurl: "/Jinka_Harshavardhan_portfolio"
+
+author: Jinka Harshavardhan
+email: jinkaharsha000@gmail.com
+phone: "+91 7569421769"
+location: "Chennai, Tamil Nadu, India"
+
+github_username: JinkaHarshaVardhan
+linkedin_username: jinkaharsha
+twitter_username: ""
+instagram_username: ""
+
+resume_pdf: /assets/resume.pdf
+
+# Site palette (also in CSS)
+theme_colors:
+  white: "#FFFFFF"
+  sky: "#BFDDF0"
+  ocean: "#8CC0EB"
+
+navigation:
+  - title: Home
+    url: /
+  - title: About
+    url: /about/
+  - title: Projects
+    url: /projects/
+  - title: Research
+    url: /research/
+  - title: Experience
+    url: /experience/
+
+project_categories:
+  - id: all
+    label: All
+  - id: cv
+    label: Computer Vision
+    hub: /projects/cv/
+  - id: llm
+    label: LLM / NLP
+    hub: /projects/llm/
+  - id: agentic
+    label: Agentic AI
+    hub: /projects/agentic-ai/
+  - id: research
+    label: Research
+    hub: /projects/research-projects/
+  - id: ml
+    label: Machine Learning
+    hub: /projects/research-projects/
+
+markdown: kramdown
+permalink: pretty
+
+plugins: []
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor

@@ -1,0 +1,45 @@
+- company: Immerso.ai
+  location: Chennai
+  current: true
+  tag: Current
+  positions:
+    - title: Gen AI Engineer
+      dates: "Dec 2025 – Present"
+      summary: >
+        Engineer generative AI solutions in the R&D department — computer vision pipelines,
+        LLM workflow prototypes, and PyTorch-based experiments from research to deployment.
+      responsibilities:
+        - Engineer generative AI solutions in the R&D department.
+        - Build computer vision pipelines and LLM workflow prototypes.
+        - Apply PyTorch and prompt engineering for multimodal experiments.
+        - Collaborate on research-to-product transitions in fast iteration cycles.
+      technologies:
+        - PyTorch
+        - Computer Vision
+        - LLM Workflows
+        - Generative AI
+        - Prompt Engineering
+      outcomes: >
+        Deepened expertise across vision and language modalities; contributed to R&D initiatives
+        that transform experimental models into deployable AI capabilities.
+
+- company: Mainflow
+  location: ""
+  current: false
+  tag: Internship
+  positions:
+    - title: Web Developer Intern
+      dates: "Oct 2024 – Dec 2024"
+      summary: >
+        Acquired web development skills during internship, contributing to team projects and responsive front-end design.
+      responsibilities:
+        - Contributed to team web projects during the internship period.
+        - Implemented responsive layouts with React and Tailwind CSS.
+        - Improved front-end UX through component-driven design.
+      technologies:
+        - React.js
+        - Tailwind CSS
+        - JavaScript
+        - HTML / CSS
+      outcomes: >
+        Strengthened full-stack awareness and design sensibility — skills that complement AI product interfaces and demos.

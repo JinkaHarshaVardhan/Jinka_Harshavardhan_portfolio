@@ -1,0 +1,46 @@
+- id: hpsf-net
+  title: HPSF-Net
+  category: research
+  tag: "Research · CV + Physics"
+  featured: true
+  summary: >
+    Hybrid physics-guided spatial earthquake forecasting with probabilistic short-term predictions.
+  detail_url: /projects/research-projects/#hpsf-net
+  research_url: /research/
+  github: https://github.com/JinkaHarshaVardhan
+
+- id: drowsiness
+  title: AI-Driven Drowsiness Detection
+  category: cv
+  tag: Computer Vision
+  featured: false
+  summary: Real-time eye movement and facial expression analysis for fatigue alerts.
+  detail_url: /projects/cv/#drowsiness
+  github: https://github.com/JinkaHarshaVardhan
+
+- id: sentiment
+  title: Multilingual Sentiment Analysis
+  category: llm
+  tag: "NLP · Streamlit"
+  featured: false
+  summary: Review analysis web app with Python and Streamlit.
+  detail_url: /projects/llm/#sentiment
+  github: https://github.com/JinkaHarshaVardhan
+
+- id: house-price
+  title: House Price Prediction
+  category: ml
+  tag: ML
+  featured: false
+  summary: Regression model on structured housing attributes.
+  detail_url: /projects/research-projects/#house-price
+  github: https://github.com/JinkaHarshaVardhan
+
+- id: agentic
+  title: LLM Workflow Pipelines
+  category: agentic
+  tag: Agentic
+  featured: false
+  summary: LangChain-based agents, RAG patterns, and multimodal orchestration.
+  detail_url: /projects/agentic-ai/
+  github: https://github.com/JinkaHarshaVardhan

@@ -1,0 +1,65 @@
+name: Jinka Harshavardhan
+role: Gen AI Engineer
+company: Immerso.ai
+location: Chennai, India
+eyebrow: "Chennai, India · Immerso.ai"
+
+hero_title_before: Building
+hero_title_highlight: intelligent
+hero_title_after: systems at the edge of Gen AI
+hero_taglines:
+  - "Gen AI Engineer · Computer Vision · LLM Workflows"
+  - "PyTorch · LangChain · Agentic AI"
+  - "Turning complex research into real impact"
+
+summary: >
+  Dynamic Gen AI Engineer with a strong foundation in computer vision and LLM workflows at Immerso.ai.
+  Proven expertise in PyTorch and prompt engineering, complemented by a passion for innovative solutions.
+  Adept at collaborating in fast-paced environments, transforming complex challenges into impactful results.
+
+orb_role: Gen AI Engineer
+orb_location: "Immerso.ai · Chennai"
+orb_note: "CGPA 9.05 · B.Tech AI @ SRM"
+
+stats:
+  - value: "9.05"
+    label: "CGPA · B.Tech AI"
+  - value: "2+"
+    label: "Years in ML / AI"
+  - value: "6+"
+    label: "Certifications"
+
+featured_skill_groups:
+  - PyTorch
+  - Computer Vision
+  - LLM Workflows
+  - Generative AI
+  - LangChain
+  - Prompt Engineering
+  - RAG
+  - React
+  - Streamlit
+  - Agentic AI
+
+journey_steps:
+  - Machine Learning
+  - Deep Learning
+  - Computer Vision
+  - LLMs & NLP
+  - Agentic AI
+
+interests:
+  - Physics-informed deep learning
+  - Multimodal & generative models
+  - Real-time vision systems
+  - Agent orchestration & tool use
+  - Open-source AI tooling
+
+current_work: >
+  At Immerso.ai I engineer generative AI solutions in the R&D department — advancing computer vision pipelines,
+  LLM workflow design, and PyTorch-based prototypes that move from experiment to deployment.
+
+languages:
+  - English
+  - Hindi
+  - Telugu

@@ -1,0 +1,118 @@
+/* Rendered Markdown (Kramdown) inside portfolio layout */
+.markdown-body {
+  color: var(--ink-soft);
+  line-height: 1.75;
+  max-width: 75ch;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4 {
+  font-family: var(--font-display);
+  color: var(--ink);
+  margin: 1.75rem 0 0.75rem;
+  line-height: 1.2;
+}
+
+.markdown-body h1 { font-size: 2rem; }
+.markdown-body h2 { font-size: 1.5rem; }
+.markdown-body h3 { font-size: 1.2rem; }
+
+.markdown-body p {
+  margin-bottom: 1rem;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  margin: 0 0 1rem 1.25rem;
+}
+
+.markdown-body li {
+  margin-bottom: 0.4rem;
+}
+
+.markdown-body a {
+  color: var(--ocean);
+  font-weight: 500;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body a.btn {
+  display: inline-flex;
+  text-decoration: none;
+  margin-right: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.markdown-body a.btn:hover {
+  text-decoration: none;
+}
+
+.markdown-body strong {
+  color: var(--ink);
+}
+
+.markdown-body code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: rgba(191, 221, 240, 0.45);
+  padding: 0.15em 0.4em;
+  border-radius: 6px;
+}
+
+.markdown-body pre {
+  margin: 1.25rem 0;
+  padding: 1.25rem;
+  background: rgba(26, 43, 60, 0.05);
+  border: 1px dashed var(--glass-border);
+  border-radius: var(--radius-sm);
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.markdown-body pre code {
+  background: none;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  margin: 1.25rem 0;
+  padding: 0.75rem 1.25rem;
+  border-left: 4px solid var(--ocean);
+  background: rgba(191, 221, 240, 0.25);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+
+.markdown-body hr {
+  border: none;
+  height: 1px;
+  background: var(--glass-border);
+  margin: 2rem 0;
+}
+
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.markdown-body th,
+.markdown-body td {
+  border: 1px solid var(--glass-border);
+  padding: 0.6rem 0.85rem;
+  text-align: left;
+}
+
+.markdown-body th {
+  background: rgba(191, 221, 240, 0.35);
+}
+
+.markdown-body--wide {
+  max-width: none;
+}

@@ -1,0 +1,13 @@
+<footer class="footer">
+  <div class="container footer__inner">
+    <p class="footer__copy">© {{ 'now' | date: '%Y' }} {{ site.data.profile.name }} · {{ site.data.profile.role }}</p>
+    <ul class="footer__links">
+      {% for item in site.navigation %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+    <div class="hero__social">
+      {% include social-icons.html %}
+    </div>
+  </div>
+</footer>

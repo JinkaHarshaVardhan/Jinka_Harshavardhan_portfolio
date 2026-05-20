@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<header class="page-header container">
+  <p class="hero__eyebrow reveal">
+    <a href="{{ '/projects/' | relative_url }}" style="text-decoration:none">← Projects</a>
+    {% if page.parent_hub %} · <a href="{{ page.parent_hub | relative_url }}" style="text-decoration:none">{{ page.parent_label }}</a>{% endif %}
+  </p>
+  <h1 class="section-title reveal">{{ page.title }}</h1>
+  {% if page.subtitle %}
+  <p class="section-subtitle reveal" style="margin:0 auto">{{ page.subtitle }}</p>
+  {% endif %}
+</header>
+<section class="section section--tight">
+  <div class="container">
+    <article class="glass-card glass-card--accent reveal markdown-body" style="padding:2.5rem">
+      {% if page.tag %}<span class="tag{% if page.tag_peach %} tag--peach{% endif %}">{{ page.tag }}</span>{% endif %}
+      {{ content }}
+      {% if page.github %}
+      <p style="margin-top:2rem">
+        <a href="{{ page.github }}" class="btn btn--primary" target="_blank" rel="noopener">GitHub Repository</a>
+      </p>
+      {% endif %}
+    </article>
+  </div>
+</section>

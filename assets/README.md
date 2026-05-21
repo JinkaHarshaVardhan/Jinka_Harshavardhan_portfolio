@@ -1,12 +1,16 @@
 # Assets
 
+## Profile photo
+
+Current file: `assets/images/1000146738.jpg`
+
+To change the photo: replace that file (same name) **or** add a new image and update `profile_image` in `_config.yml`.
+
 ## Resume PDF
 
-Export your resume as PDF and save it here:
+Current file: `assets/resume.pdf`
 
-```
-assets/resume.pdf
-```
+To update: replace this file with your new PDF (keep the name `resume.pdf`).
 
 The site links to this file from the home page and Experience page for download and inline preview.
 

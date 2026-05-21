@@ -21,7 +21,8 @@ This site uses **Jekyll** (same idea as `saisriteja.github.io`): you edit Markdo
 | Agentic AI details | `projects/agentic-ai.md` |
 | Research projects details | `projects/research-projects.md` |
 | Extra home page notes | `index.md` |
-| Resume PDF | `assets/resume.pdf` |
+| Profile photo | Replace `assets/images/1000146738.jpg` (or change path in `_config.yml` → `profile_image`) |
+| Resume PDF | Replace `assets/resume.pdf` (path set in `_config.yml` → `resume_pdf`) |
 
 You do **not** need to edit HTML. Layouts in `_layouts/` and `_includes/` wrap your content with the fluid-art design.
 

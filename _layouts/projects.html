@@ -10,7 +10,7 @@ layout: default
   </header>
 
   <section class="section section--tight panel-narrow" style="padding-top:0;padding-bottom:var(--section-gap)">
-    <div class="glass-card section-glass reveal">
+    <div class="glass-card section-glass section-glass--compact reveal">
       <nav class="category-nav" aria-label="Filter projects">
         {% for cat in site.project_categories %}
         <button type="button" class="{% if cat.id == 'all' %}is-active{% endif %}" data-filter="{{ cat.id }}">{{ cat.label }}</button>

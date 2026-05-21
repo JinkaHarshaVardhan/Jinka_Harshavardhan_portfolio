@@ -2,8 +2,10 @@
   {% for project in site.data.projects %}
   <article class="glass-card project-card project-card--square reveal" data-category="{{ project.category }}">
     <span class="tag">{{ project.tag }}</span>
-    <h3>{{ project.title }}</h3>
-    {% if project.duration %}<p class="meta">{{ project.duration }}</p>{% endif %}
+    <h3>
+      {{ project.title }}
+      {% if project.duration %}<span class="project-card__period">{{ project.duration }}</span>{% endif %}
+    </h3>
     <p>{{ project.summary }}</p>
     <div class="project-card__actions">
       <a href="{{ project.detail_url | relative_url }}" class="btn btn--primary">Details</a>

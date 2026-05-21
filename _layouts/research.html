@@ -12,10 +12,10 @@ layout: default
   <section class="section section--tight" style="padding-top:0">
     <div class="glass-card section-glass card-equal reveal">
       <span class="tag">Primary Research</span>
-      <h2 class="section-title" style="font-size:1.5rem;margin-top:0.75rem">Hybrid Physics-Guided Spatial Earthquake Forecasting (HPSF-Net)</h2>
-      {% if page.duration %}
-      <p class="meta">{{ page.duration }}</p>
-      {% endif %}
+      <h2 class="section-title research-title" style="font-size:1.5rem;margin-top:0.75rem">
+        Hybrid Physics-Guided Spatial Earthquake Forecasting (HPSF-Net)
+        {% if page.duration %}<span class="project-card__period">{{ page.duration }}</span>{% endif %}
+      </h2>
       {% assign research_intro = site.data.research_sections | first %}
       <p style="color:var(--ink-soft);line-height:1.7;margin:1rem 0 1.5rem">{{ research_intro.content }}</p>
       <div class="project-card__actions">

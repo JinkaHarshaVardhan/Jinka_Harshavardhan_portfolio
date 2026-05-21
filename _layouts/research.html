@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="container sections-stack">
-  <header class="glass-card section-glass card-equal reveal page-header" style="text-align:center">
+  <header class="glass-card section-glass reveal page-header page-header--compact">
     <h1 class="section-title">{{ page.title }}</h1>
     {% if page.subtitle %}
     <p class="section-subtitle" style="margin:0.75rem auto 0">{{ page.subtitle }}</p>
@@ -16,8 +16,8 @@ layout: default
       {% assign research_intro = site.data.research_sections | first %}
       <p style="color:var(--ink-soft);line-height:1.7;margin:1rem 0 1.5rem">{{ research_intro.content }}</p>
       <div class="project-card__actions">
-        <a href="{{ '/projects/research-projects/' | relative_url }}#hpsf-net" class="btn btn--primary">Project Page</a>
-        <a href="https://github.com/JinkaHarshaVardhan" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+        <a href="{{ site.arxiv_url }}" class="btn btn--primary" target="_blank" rel="noopener">arXiv</a>
+        <a href="https://github.com/JinkaHarshaVardhan" class="btn btn--primary" target="_blank" rel="noopener">GitHub</a>
       </div>
     </div>
   </section>

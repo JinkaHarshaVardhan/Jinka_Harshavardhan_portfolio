@@ -6,7 +6,7 @@ permalink: /about/
 ---
 
 <div class="container sections-stack">
-  <header class="glass-card section-glass card-equal reveal page-header" style="text-align:center">
+  <header class="glass-card section-glass reveal page-header page-header--compact">
     <h1 class="section-title">{{ page.title }}</h1>
   </header>
 

@@ -199,14 +199,86 @@
   }
 }
 
-.project-grid.bento-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 1.5rem;
+.panel-narrow {
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.project-grid .card-equal {
-  min-height: 280px;
+.page-header--compact {
+  max-width: 420px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding: 1.25rem 1.75rem !important;
+  min-height: auto !important;
+}
+
+.page-header--compact .section-subtitle {
+  margin: 0.5rem 0 0;
+  font-size: 0.95rem;
+}
+
+.projects-grid-wrap {
+  margin-top: 1.25rem;
+}
+
+.project-grid--squares {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.project-card--square {
+  aspect-ratio: 1;
+  min-height: 0;
+  padding: 1.1rem 1.15rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card--square h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0 0.35rem;
+  line-height: 1.25;
+}
+
+.project-card--square > p {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  flex: 1;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card--square .project-card__actions {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.project-card--square .project-card__actions .btn {
+  width: 100%;
+  justify-content: center;
+  padding: 0.55rem 1rem;
+  font-size: 0.85rem;
+}
+
+.project-card--square .tag {
+  font-size: 0.65rem;
+  padding: 0.25rem 0.6rem;
+}
+
+@media (max-width: 560px) {
+  .project-grid--squares {
+    grid-template-columns: 1fr;
+  }
+
+  .project-card--square {
+    aspect-ratio: auto;
+    min-height: 200px;
+  }
 }
 
 .skills-grid-uniform {

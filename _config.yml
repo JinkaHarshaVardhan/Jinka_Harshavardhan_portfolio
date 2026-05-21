@@ -15,6 +15,7 @@ instagram_username: ""
 
 resume_pdf: /assets/resume.pdf
 profile_image: /assets/images/profile-placeholder.svg
+arxiv_url: "#"
 
 theme_colors:
   white: "#FFFFFF"

@@ -2,26 +2,23 @@
 layout: default
 ---
 <div class="container sections-stack">
-  <header class="glass-card section-glass card-equal reveal page-header" style="text-align:center">
+  <header class="glass-card section-glass reveal page-header page-header--compact">
     <h1 class="section-title">{{ page.title }}</h1>
     {% if page.subtitle %}
-    <p class="section-subtitle" style="margin:0.75rem auto 0">{{ page.subtitle }}</p>
+    <p class="section-subtitle">{{ page.subtitle }}</p>
     {% endif %}
   </header>
 
-  <section class="section section--tight" style="padding-top:0">
-    <div class="glass-card section-glass card-equal reveal">
+  <section class="section section--tight panel-narrow" style="padding-top:0;padding-bottom:var(--section-gap)">
+    <div class="glass-card section-glass reveal">
       <nav class="category-nav" aria-label="Filter projects">
         {% for cat in site.project_categories %}
         <button type="button" class="{% if cat.id == 'all' %}is-active{% endif %}" data-filter="{{ cat.id }}">{{ cat.label }}</button>
         {% endfor %}
       </nav>
-    </div>
-  </section>
-
-  <section class="section section--tight" style="padding-top:0;padding-bottom:var(--section-gap)">
-    <div class="reveal">
-      {% include project-grid.html %}
+      <div class="projects-grid-wrap">
+        {% include project-grid.html %}
+      </div>
     </div>
   </section>
 </div>

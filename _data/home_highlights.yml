@@ -1,10 +1,10 @@
 items:
-  - title: HPSF-Net
-    text: Hybrid physics-guided spatial earthquake forecasting with probabilistic short-term predictions.
-    url: /research/
   - title: Gen AI Engineer · Immerso.ai
     text: R&D in computer vision, LLM workflows, and generative AI — Dec 2025 to Present.
     url: /experience/
   - title: AI Sprint Copilot
     text: Multi-agent sprint analytics with LangGraph, GitHub & Plane APIs, and Qwen3 via Ollama.
     url: /projects/agentic-ai/#sprint-copilot
+  - title: HPSF-Net
+    text: Hybrid physics-guided spatial earthquake forecasting with probabilistic short-term predictions.
+    url: /research/

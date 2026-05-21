@@ -1,0 +1,24 @@
+- title: Overview
+  content: >
+    HPSF-Net is a hybrid deep learning framework that fuses seismic waveforms, earthquake history,
+    and spatial region interactions with physics-guided constraints for short-term probabilistic earthquake forecasts.
+
+- title: Problem
+  content: >
+    Earthquake forecasting requires modeling complex spatio-temporal dependencies while respecting physical laws.
+    Pure data-driven models often violate domain constraints; HPSF-Net bridges this gap with hybrid supervision.
+
+- title: Approach
+  content: >
+    Multi-branch encoders process waveforms and catalog history; graph-style spatial modules capture regional coupling;
+    physics-guided loss terms regularize predictions toward seismologically plausible outcomes.
+
+- title: Tech Stack
+  content: >
+    PyTorch, NumPy, Pandas · seismic waveforms & epicenter catalogs · graph-style region interactions ·
+    physics-informed loss and probabilistic forecasting.
+
+- title: Results & Impact
+  content: >
+    Improves spatial consistency of forecasts versus naive deep baselines by embedding domain structure.
+    Suitable for hazard awareness dashboards and operational early-warning research pipelines.

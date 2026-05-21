@@ -20,7 +20,7 @@
 
 - id: sentiment
   title: Multilingual Sentiment Analysis
-  category: llm
+  category: nlp
   tag: "NLP · Streamlit"
   featured: false
   summary: Review analysis web app with Python and Streamlit.
@@ -29,8 +29,8 @@
 
 - id: sprint-copilot
   title: AI Sprint Copilot
-  category: agentic
-  tag: "Agentic · Multi-Agent"
+  category: llm
+  tag: "LLM · Multi-Agent"
   featured: false
   summary: >
     Multi-agent agile intelligence platform integrating GitHub, Plane, and local LLMs for sprint analytics,

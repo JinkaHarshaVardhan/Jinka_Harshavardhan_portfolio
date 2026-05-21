@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" role="img" aria-label="Profile photo placeholder">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#E5F2FA"/>
+      <stop offset="100%" style="stop-color:#BFDDF0"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="400" fill="url(#bg)"/>
+  <circle cx="200" cy="160" r="72" fill="#8CC0EB" opacity="0.85"/>
+  <ellipse cx="200" cy="320" rx="110" ry="90" fill="#8CC0EB" opacity="0.85"/>
+  <text x="200" y="380" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#5A7285">Replace with your photo</text>
+</svg>

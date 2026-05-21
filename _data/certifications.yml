@@ -1,6 +1,23 @@
-- Introduction to Modern AI — Cisco
-- Introduction to Generative AI — Coursera
-- Database Management — Coursera
-- Introduction to Machine Learning — Kaggle
-- Introduction to Deep Learning — Kaggle
-- Computer Organization and Architecture — Udemy
+- name: Introduction to Modern AI
+  issuer: Cisco
+  url: https://www.netacad.com/
+
+- name: Introduction to Generative AI
+  issuer: Coursera
+  url: https://www.coursera.org/
+
+- name: Database Management
+  issuer: Coursera
+  url: https://www.coursera.org/
+
+- name: Introduction to Machine Learning
+  issuer: Kaggle
+  url: https://www.kaggle.com/learn
+
+- name: Introduction to Deep Learning
+  issuer: Kaggle
+  url: https://www.kaggle.com/learn
+
+- name: Computer Organization and Architecture
+  issuer: Udemy
+  url: https://www.udemy.com/

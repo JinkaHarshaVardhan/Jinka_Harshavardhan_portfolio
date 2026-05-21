@@ -14,8 +14,8 @@ twitter_username: ""
 instagram_username: ""
 
 resume_pdf: /assets/resume.pdf
+profile_image: /assets/images/profile-placeholder.svg
 
-# Site palette (also in CSS)
 theme_colors:
   white: "#FFFFFF"
   sky: "#BFDDF0"
@@ -38,19 +38,10 @@ project_categories:
     label: All
   - id: cv
     label: Computer Vision
-    hub: /projects/cv/
+  - id: nlp
+    label: NLP
   - id: llm
-    label: LLM / NLP
-    hub: /projects/llm/
-  - id: agentic
-    label: Agentic AI
-    hub: /projects/agentic-ai/
-  - id: research
-    label: Research
-    hub: /projects/research-projects/
-  - id: ml
-    label: Machine Learning
-    hub: /projects/llm/
+    label: LLM
 
 markdown: kramdown
 permalink: pretty

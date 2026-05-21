@@ -6,92 +6,51 @@ layout: default
 <section class="hero hero--intro">
   <div class="container">
     <div class="glass-card section-glass hero-intro reveal">
-      <p class="hero__eyebrow">{{ p.eyebrow }}</p>
-      <h1 class="hero__name">{{ p.name }}</h1>
-      <p class="hero__role">{{ p.role }} · {{ p.company }}</p>
-      <p class="hero__summary">{{ p.summary }}</p>
-      <div class="hero__actions">
-        <a href="{{ '/projects/' | relative_url }}" class="btn btn--primary">View Projects</a>
-        <a href="{{ '/research/' | relative_url }}" class="btn btn--ghost">Research</a>
-        <a href="{{ site.resume_pdf | relative_url }}" class="btn btn--ghost" download>Download CV</a>
+      <div class="hero-split">
+        <div class="hero-split__text">
+          <p class="hero__eyebrow">{{ p.eyebrow }}</p>
+          <h1 class="hero__name">{{ p.name }}</h1>
+          <p class="hero__role">{{ p.role }} · {{ p.company }}</p>
+          <p class="hero__summary">{{ p.summary }}</p>
+          <div class="hero__social">{% include social-icons.html %}</div>
+        </div>
+        <div class="hero-split__photo">
+          <img
+            src="{{ site.profile_image | relative_url }}"
+            alt="Profile photo of {{ p.name }}"
+            class="profile-photo"
+            width="320"
+            height="320"
+          />
+        </div>
       </div>
-      <div class="hero__social">{% include social-icons.html %}</div>
     </div>
   </div>
 </section>
 
 <div class="container sections-stack">
   <section class="section section--tight" style="padding-top:0">
-    <div class="glass-card section-glass reveal">
-      <h2 class="section-title">Featured Skills</h2>
-      <p class="section-subtitle" style="margin:1rem 0 2rem">Core stack across vision, language, and deployment.</p>
-      <div class="skills-cloud reveal-stagger">
-        {% for skill in p.featured_skill_groups %}
-        <span class="skill-pill">{{ skill }}</span>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
-
-  {% assign featured = site.data.projects | where: "featured", true | first %}
-  {% assign current_job = site.data.experience | where: "current", true | first %}
-
-  <section class="section section--tight" style="padding-top:0">
-    <div class="glass-card section-glass reveal">
+    <div class="glass-card section-glass card-equal reveal">
       <h2 class="section-title">Highlights</h2>
-      <div class="bento-grid" style="margin-top:1.5rem">
-        {% if featured %}
-        <article class="glass-card glass-card--accent project-card span-8">
-          <span class="tag">{{ featured.tag }}</span>
-          <h3 style="font-family:var(--font-display);font-size:1.75rem;margin:0.75rem 0">{{ featured.title }}</h3>
-          <p style="color:var(--ink-soft)">{{ featured.summary }}</p>
-          <a href="{{ featured.research_url | relative_url }}" class="btn btn--primary" style="margin-top:1rem;width:fit-content">Explore Research</a>
-        </article>
-        {% endif %}
-        {% if current_job %}
-        <article class="glass-card project-card span-4">
-          <span class="tag tag--peach">Current Role</span>
-          <h3 style="font-family:var(--font-display);margin:0.75rem 0">{{ current_job.positions.first.title }}</h3>
-          <p style="font-size:0.95rem;color:var(--ink-muted)">{{ current_job.company }} · {{ current_job.positions.first.dates }}</p>
-          <p style="margin-top:0.75rem;color:var(--ink-soft)">{{ current_job.positions.first.summary | strip }}</p>
-          <a href="{{ '/experience/' | relative_url }}" class="btn btn--ghost" style="margin-top:1rem">Experience →</a>
-        </article>
-        {% endif %}
-      </div>
+      <ul class="highlights-list">
+        {% for item in site.data.home_highlights.items %}
+        <li class="highlights-list__item">
+          <strong>
+            {% if item.url %}
+            <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% else %}
+            {{ item.title }}
+            {% endif %}
+          </strong>
+          <span>{{ item.text }}</span>
+        </li>
+        {% endfor %}
+      </ul>
     </div>
   </section>
-
-  <section class="section section--tight" style="padding-top:0">
-    <div class="glass-card section-glass reveal">
-      <h2 class="section-title">Quick Links</h2>
-      <div class="grid-3" style="margin-top:2rem">
-        <a href="{{ '/projects/cv/' | relative_url }}" class="glass-card project-card" style="text-decoration:none;color:inherit">
-          <span class="tag">CV</span>
-          <h3>Drowsiness Detection</h3>
-          <p style="color:var(--ink-muted);font-size:0.9rem">Real-time fatigue analysis with deep learning.</p>
-        </a>
-        <a href="{{ '/projects/llm/' | relative_url }}" class="glass-card project-card" style="text-decoration:none;color:inherit">
-          <span class="tag">LLM / NLP</span>
-          <h3>Multilingual Sentiment</h3>
-          <p style="color:var(--ink-muted);font-size:0.9rem">Streamlit app for review analysis.</p>
-        </a>
-        <a href="{{ '/projects/agentic-ai/' | relative_url }}" class="glass-card project-card" style="text-decoration:none;color:inherit">
-          <span class="tag tag--peach">Agentic</span>
-          <h3>AI Sprint Copilot</h3>
-          <p style="color:var(--ink-muted);font-size:0.9rem">Multi-agent sprint analytics with LangGraph & Qwen3.</p>
-        </a>
-      </div>
-    </div>
-  </section>
-
-  {% if content != "" %}
-  <section class="section section--tight" style="padding-top:0">
-    <div class="glass-card section-glass markdown-body reveal">{{ content }}</div>
-  </section>
-  {% endif %}
 
   <section class="section section--tight" id="contact" style="padding-top:0;padding-bottom:var(--section-gap)">
-    <div class="glass-card section-glass reveal" style="text-align:center">
+    <div class="glass-card section-glass card-equal reveal" style="text-align:center">
       <h2 class="section-title">Let's Connect</h2>
       <p class="section-subtitle" style="margin:1rem auto 2rem">Open to research collaborations, internships, and AI engineering roles.</p>
       <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center">

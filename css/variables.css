@@ -20,7 +20,7 @@
   --radius-md: 20px;
   --radius-lg: 32px;
   --radius-pill: 999px;
-  --font-display: "Syne", system-ui, sans-serif;
+  --font-display: "Inter", "DM Sans", system-ui, sans-serif;
   --font-body: "DM Sans", system-ui, sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, monospace;
   --nav-height: 72px;

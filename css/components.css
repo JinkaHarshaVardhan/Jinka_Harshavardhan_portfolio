@@ -301,6 +301,14 @@
   line-height: 1.75;
 }
 
+.connect-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
 .section-subtitle {
   font-size: 1.1rem;
   color: var(--ink-muted);

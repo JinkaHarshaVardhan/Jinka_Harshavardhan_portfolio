@@ -53,10 +53,7 @@ layout: default
     <div class="glass-card section-glass card-equal reveal" style="text-align:center">
       <h2 class="section-title">Let's Connect</h2>
       <p class="section-subtitle" style="margin:1rem auto 2rem">Open to research collaborations, internships, and AI engineering roles.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:1rem;justify-content:center">
-        <a href="mailto:{{ site.email }}" class="btn btn--primary">{{ site.email }}</a>
-        <a href="tel:{{ site.phone | replace: ' ', '' }}" class="btn btn--ghost">{{ site.phone }}</a>
-      </div>
+      {% include connect-links.html %}
     </div>
   </section>
 </div>

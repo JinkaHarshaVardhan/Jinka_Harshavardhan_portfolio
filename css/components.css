@@ -243,6 +243,23 @@
   line-height: 1.25;
 }
 
+.project-card--square > p.meta {
+  flex: 0;
+  display: block;
+  -webkit-line-clamp: unset;
+  margin: 0 0 0.35rem;
+  font-size: 0.78rem;
+  color: var(--ocean);
+  font-weight: 600;
+}
+
+.section-glass .meta {
+  font-size: 0.9rem;
+  color: var(--ocean);
+  font-weight: 600;
+  margin: 0.35rem 0 0;
+}
+
 .project-card--square > p {
   font-size: 0.82rem;
   line-height: 1.5;
